@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        
+    
+        <script>
+            function validate()
+            {
+                var a;
+                
+                        a=document.f1.uname.value;
+                        b=document.f1.pwd.value;
+                if((a == "")&&(b==""))
+                {
+                    window.alert(" This field cannot be empty!");
+                    return false;
+                }
+                else
+                {
+                    window.alert(" Your details are being loaded!");
+                }
+                  
+            }
+        </script>
+    </head>
+    <body bgcolor="red" text="black">
+        
+    <center>
+        
+            
+
+        <h1> LOGIN </h1>
+        <form name="f1" action="http://localhost:8084/BookBank_Mananagement/Login">
+            <pre>
+                       Username:   <input type="text" name="uname" value=""><br>
+            
+            
+            
+                        Password:   <input type="password" name="pwd" value=""><br>
+            
+            
+            
+            
+                        
+            
+            
+                        <input type="submit" value="Login"  onclick="validate()"><br>
+            
+            
+                        <input type="reset" value=" Reset"><br>
+            
+            </pre>    
+        </form>
+        
+
+    </center>
+    </body>
+</html>
